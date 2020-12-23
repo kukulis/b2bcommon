@@ -6,10 +6,10 @@
  * Time: 11.09
  */
 
-namespace Catalog\B2b\Common\Data\Mock;
+namespace Catalog\B2b\Common\Data\Legacy\Mock;
 
 
-use Catalog\B2b\Common\Data\Catalog\KatalogasPreke;
+use Catalog\B2b\Common\Data\Legacy\Catalog\KatalogasPreke;
 
 class Prekes
 {

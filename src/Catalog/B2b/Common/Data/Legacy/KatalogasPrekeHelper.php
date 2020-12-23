@@ -1,8 +1,8 @@
 <?php
-namespace Catalog\B2b\Common\Helper;
+namespace Catalog\B2b\Common\Data\Legacy;
 
-use Catalog\B2b\Common\Data\Catalog\Aprasymas;
-use Catalog\B2b\Common\Data\Catalog\KatalogasPreke;
+use Catalog\B2b\Common\Data\Legacy\Catalog\Aprasymas;
+use Catalog\B2b\Common\Data\Legacy\Catalog\KatalogasPreke;
 
 class KatalogasPrekeHelper
 {

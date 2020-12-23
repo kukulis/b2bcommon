@@ -6,9 +6,9 @@
  * Time: 11.04
  */
 
-namespace Catalog\B2b\Common\Data\Catalog;
+namespace Catalog\B2b\Common\Data\Legacy\Catalog;
 
-use Catalog\B2b\Common\Helper\KatalogasPrekeHelper;
+use Catalog\B2b\Common\Data\Legacy\KatalogasPrekeHelper;
 use Catalog\B2b\Common\Helper\Utils;
 
 class Aprasymas

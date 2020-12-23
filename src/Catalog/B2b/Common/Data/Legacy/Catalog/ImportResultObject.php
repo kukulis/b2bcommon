@@ -6,7 +6,7 @@
  * Time: 17.48
  */
 
-namespace Catalog\B2b\Common\Data\Catalog;
+namespace Catalog\B2b\Common\Data\Legacy\Catalog;
 
 
 class ImportResultObject

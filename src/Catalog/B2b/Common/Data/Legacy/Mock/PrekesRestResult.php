@@ -6,7 +6,7 @@
  * Time: 11.06
  */
 
-namespace Catalog\B2b\Common\Data\Mock;
+namespace Catalog\B2b\Common\Data\Legacy\Mock;
 
 class PrekesRestResult
 {
