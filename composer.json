@@ -1,0 +1,17 @@
+{
+  "name": "gtcatalog/b2bcommon",
+  "type": "library",
+  "description": "b2bcommon",
+  "keywords": [
+    "b2bcommon"
+  ],
+  "version": "2020.12.22",
+
+  "require": {
+    "psr/log": "~1.0",
+    "jms-serializer/serializer": "*"
+  },
+  "autoload": {
+    "psr-4": {"Catalog\\B2b\\Common\\": "src/Catalog/B2b/Common"}
+  }
+}
