@@ -1,11 +1,11 @@
 {
-  "name": "gtcatalog/b2bcommon",
+  "name": "kukulis/b2bcommon",
   "type": "library",
   "description": "b2bcommon",
   "keywords": [
     "b2bcommon"
   ],
-  "version": "2020.12.22",
+  "version": "2020.12.23",
 
   "require": {
     "psr/log": "~1.0",
