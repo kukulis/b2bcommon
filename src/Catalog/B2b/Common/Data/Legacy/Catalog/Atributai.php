@@ -97,7 +97,7 @@ class Atributai
      * @var string[]
      * naudoti tik importe, rodyme vietoj jo naudoti KatalogasPreke->categories
      */
-    public $kategorijos;
+    public $kategorijos=[];
 
     /**
      * Čia kategorijų pavadinimai
