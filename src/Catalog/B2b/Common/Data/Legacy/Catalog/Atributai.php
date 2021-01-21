@@ -139,6 +139,8 @@ class Atributai
 
     public $info_provider;
 
+    public $vendor;
+
 
     /**
      * @param $atributai
