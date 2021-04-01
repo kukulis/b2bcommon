@@ -17,9 +17,13 @@ class Category
     public $customsCode;
     public $dateCreated;
 
-    // --
+    // -- might be unfilled by unavailable data
 
     public $language;
     public $name;
     public $description;
+
+    // -- filled only in some requests
+    public $path=null;
+    public $children=[];
 }

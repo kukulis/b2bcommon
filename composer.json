@@ -5,7 +5,7 @@
   "keywords": [
     "b2bcommon"
   ],
-  "version": "2021.03.30",
+  "version": "2021.03.31",
 
   "require": {
     "psr/log": "~1.0",
