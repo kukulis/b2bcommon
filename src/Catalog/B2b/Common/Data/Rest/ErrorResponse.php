@@ -8,6 +8,7 @@
 
 namespace Catalog\B2b\Common\Data\Rest;
 
+use JMS\Serializer\Annotation as Serializer;
 
 class ErrorResponse
 {
@@ -17,8 +18,22 @@ class ErrorResponse
     const TYPE_SYSTEM='SYSTEM';
     const TYPE_WARNING='WARNING';
 
+    /**
+     * @var string
+     * @Serializer\Type("string")
+     */
     public $type;
+
+    /**
+     * @var string
+     * @Serializer\Type("string")
+     */
     public $message;
+
+    /**
+     * @var string
+     * @Serializer\Type("string")
+     */
     public $statusCode;
 
     /**
