@@ -5,11 +5,10 @@
   "keywords": [
     "b2bcommon"
   ],
-  "version": "2021.04.13",
+  "version": "2021.04.130",
 
   "require": {
-    "psr/log": "~1.0",
-    "jms-serializer/serializer": "*"
+    "psr/log": "~1.0"
   },
   "autoload": {
     "psr-4": {"Catalog\\B2b\\Common\\": "src/Catalog/B2b/Common"}
