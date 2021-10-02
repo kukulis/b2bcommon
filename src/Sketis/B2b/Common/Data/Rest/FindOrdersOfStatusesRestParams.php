@@ -1,10 +1,4 @@
 <?php
-/**
- * FindOrdersOfStatusesRestParams.php
- * Created by Giedrius Tumelis.
- * Date: 19.2.25
- * Time: 11.07
- */
 
 namespace Sketis\B2b\Common\Data\Rest;
 

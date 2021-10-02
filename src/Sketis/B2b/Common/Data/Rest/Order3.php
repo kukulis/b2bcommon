@@ -60,7 +60,7 @@ class Order3
 
     /**
      * @var DeliveryInfo
-     * @Serializer\Type("Sketis\B2b\Common\Data\DeliveryInfo")
+     * @Serializer\Type("Sketis\B2b\Common\Data\Rest\DeliveryInfo")
      * @Serializer\SerializedName("deliveryInfo")
      */
     private $deliveryInfo;

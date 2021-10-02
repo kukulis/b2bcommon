@@ -5,7 +5,6 @@ use JMS\Serializer\Annotation as Serializer;
 
 /**
  * Class RestResults
- * @package Sketis\PragmaBundle\Data\Rest
  */
 class RestResults
 {
