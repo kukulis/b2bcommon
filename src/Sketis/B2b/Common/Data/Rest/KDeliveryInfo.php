@@ -8,7 +8,7 @@ use JMS\Serializer\Annotation as Serializer;
  *
  * @package Sketis\B2b\Common\Data
  */
-class DeliveryInfo
+class KDeliveryInfo
 {
     /**
      * @var string

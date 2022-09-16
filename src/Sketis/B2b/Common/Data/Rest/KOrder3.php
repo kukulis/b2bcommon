@@ -10,7 +10,7 @@ namespace Sketis\B2b\Common\Data\Rest;
 
 use JMS\Serializer\Annotation as Serializer;
 
-class Order3
+class KOrder3
 {
     /**
      * @var string
@@ -59,7 +59,7 @@ class Order3
     private $lines=[];
 
     /**
-     * @var DeliveryInfo
+     * @var KDeliveryInfo
      * @Serializer\Type("Sketis\B2b\Common\Data\Rest\DeliveryInfo")
      * @Serializer\SerializedName("deliveryInfo")
      */
@@ -114,17 +114,17 @@ class Order3
     }
 
     /**
-     * @return DeliveryInfo
+     * @return KDeliveryInfo
      */
-    public function getDeliveryInfo(): ?DeliveryInfo
+    public function getDeliveryInfo(): ?KDeliveryInfo
     {
         return $this->deliveryInfo;
     }
 
     /**
-     * @param DeliveryInfo $deliveryInfo
+     * @param KDeliveryInfo $deliveryInfo
      */
-    public function setDeliveryInfo(DeliveryInfo $deliveryInfo=null): void
+    public function setDeliveryInfo(KDeliveryInfo $deliveryInfo=null): void
     {
         $this->deliveryInfo = $deliveryInfo;
     }
