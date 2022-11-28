@@ -141,6 +141,8 @@ class Atributai
 
     public $vendor;
 
+    public $ingredients;
+
 
     /**
      * @param $atributai
