@@ -142,7 +142,7 @@ class Atributai
     public $vendor;
 
     public $ingredients;
-
+    public $label_material;
 
     /**
      * @param $atributai
