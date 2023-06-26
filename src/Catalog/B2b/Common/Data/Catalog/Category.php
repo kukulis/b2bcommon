@@ -1,10 +1,4 @@
 <?php
-/**
- * Category.php
- * Created by Giedrius Tumelis.
- * Date: 2021-03-30
- * Time: 16:26
- */
 
 namespace Catalog\B2b\Common\Data\Catalog;
 
@@ -74,4 +68,6 @@ class Category
      * @Serializer\Type("array")
      */
     public $children=[];
+
+
 }
