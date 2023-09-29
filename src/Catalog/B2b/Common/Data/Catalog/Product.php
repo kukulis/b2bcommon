@@ -283,6 +283,9 @@ class Product
      */
     public function getTagsAsString(): string
     {
+        if ( !is_array($this->tags)) {
+            return '';
+        }
         return implode(',', $this->tags);
     }
 
