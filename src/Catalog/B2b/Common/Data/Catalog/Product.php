@@ -273,6 +273,7 @@ class Product
 
     /**
      * @var int
+     * @Serializer\Type("integer")
      */
     private $stock = 0;
 
