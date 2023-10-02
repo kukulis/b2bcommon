@@ -292,10 +292,8 @@ class Product
 
     /**
      * Set the tags from a comma-separated string or an empty string
-     *
-     * @param string $tagsString
      */
-    public function setTagsFromString(string $tagsString)
+    public function setTagsFromString(?string $tagsString)
     {
         if (empty($tagsString)) {
             $this->tags = [];
