@@ -128,32 +128,32 @@ class Product
      * @var float
      * @Serializer\Type("float")
      */
-    public $weight = 0;
+    public $weight = 0.0;
 
     /**
      * @var float
      * @Serializer\Type("float")
      */
-    public $weightBruto = 0;
+    public $weightBruto = 0.0;
 
 
     /**
      * @var float
      * @Serializer\Type("float")
      */
-    public $length = 0;
+    public $length = 0.0;
 
     /**
      * @var float
      * @Serializer\Type("float")
      */
-    public $height = 0;
+    public $height = 0.0;
 
     /**
      * @var float
      * @Serializer\Type("float")
      */
-    public $width = 0;
+    public $width = 0.0;
 
     /**
      * @var string|null
@@ -246,10 +246,10 @@ class Product
     public $variantName;
 
     /**
-     * @Serializer\Type("string")
+     * @Serializer\Type("string|array")
      * @Serializer\Accessor(getter="getTagsAsString",setter="setTagsFromString")
      */
-    public $tags;
+    public $tags=[];
 
     /**
      * @var string|null
