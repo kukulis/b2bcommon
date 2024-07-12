@@ -279,6 +279,13 @@ class Product
      */
     private $stock = 0;
 
+
+    /**
+     * @var Package[]
+     * @Serializer\Type("array<Catalog\B2b\Common\Data\Catalog\Package>")
+     */
+    private $packages;
+
     /**
      * Return the tags as a comma-separated string
      *
@@ -577,4 +584,16 @@ class Product
         $this->composition = $composition;
         return $this;
     }
+
+    public function getPackages(): array
+    {
+        return $this->packages;
+    }
+
+    public function setPackages(array $packages): Product
+    {
+        $this->packages = $packages;
+        return $this;
+    }
+
 }
