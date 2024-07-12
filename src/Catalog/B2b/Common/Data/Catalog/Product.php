@@ -1,17 +1,13 @@
 <?php
-/**
- * Product.php
- * Created by Giedrius Tumelis.
- * Date: 2021-02-09
- * Time: 15:52
- */
 
 namespace Catalog\B2b\Common\Data\Catalog;
 
 use JMS\Serializer\Annotation as Serializer;
 use DateTime;
-use Sketis\Kainorasciai\Entity\KainorascioPrekeEntity;
 
+/**
+ * This class is for DTO (Data Transfer Object) purposes
+ */
 class Product
 {
     /**
@@ -267,7 +263,6 @@ class Product
     public $composition;
 
     /**
-     * @var KainorascioPrekeEntity|null
      */
     private $pricelistProduct;
 
@@ -302,11 +297,11 @@ class Product
         }
     }
 
-    public function getPricelistProduct(): ?KainorascioPrekeEntity {
+    public function getPricelistProduct() {
         return $this->pricelistProduct;
     }
 
-    public function setPricelistProduct(?KainorascioPrekeEntity $pricelistProduct): void {
+    public function setPricelistProduct($pricelistProduct): void {
         $this->pricelistProduct = $pricelistProduct;
     }
 
