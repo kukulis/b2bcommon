@@ -134,6 +134,13 @@ class Product
      * @var float
      * @Serializer\Type("float")
      */
+    public $weightBruto = 0;
+
+
+    /**
+     * @var float
+     * @Serializer\Type("float")
+     */
     public $length = 0;
 
     /**
