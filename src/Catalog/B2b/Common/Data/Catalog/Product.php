@@ -2,8 +2,8 @@
 
 namespace Catalog\B2b\Common\Data\Catalog;
 
-use JMS\Serializer\Annotation as Serializer;
 use DateTime;
+use JMS\Serializer\Annotation as Serializer;
 
 /**
  * This class is for DTO (Data Transfer Object) purposes
@@ -249,7 +249,7 @@ class Product
      * @Serializer\Type("string|array")
      * @Serializer\Accessor(getter="getTagsAsString",setter="setTagsFromString")
      */
-    public $tags=[];
+    public $tags = [];
 
     /**
      * @var string|null
@@ -293,7 +293,7 @@ class Product
      */
     public function getTagsAsString(): string
     {
-        if ( !is_array($this->tags)) {
+        if (!is_array($this->tags)) {
             return '';
         }
         return implode(',', $this->tags);
@@ -313,21 +313,25 @@ class Product
         return $this;
     }
 
-    public function getPricelistProduct() {
+    public function getPricelistProduct()
+    {
         return $this->pricelistProduct;
     }
 
-    public function setPricelistProduct($pricelistProduct): self {
+    public function setPricelistProduct($pricelistProduct): self
+    {
         $this->pricelistProduct = $pricelistProduct;
 
         return $this;
     }
 
-    public function getStock(): int {
+    public function getStock(): int
+    {
         return $this->stock;
     }
 
-    public function setStock(int $stock): self {
+    public function setStock(int $stock): self
+    {
         $this->stock = $stock;
 
         return $this;
@@ -587,6 +591,9 @@ class Product
 
     public function getPackages(): array
     {
+        if ($this->packages == null) {
+            $this->packages = [];
+        }
         return $this->packages;
     }
 
