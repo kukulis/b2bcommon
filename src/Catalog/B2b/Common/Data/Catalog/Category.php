@@ -3,6 +3,7 @@
 namespace Catalog\B2b\Common\Data\Catalog;
 
 use JMS\Serializer\Annotation as Serializer;
+use DateTime;
 
 class Category
 {
@@ -31,8 +32,8 @@ class Category
     public $customsCode;
 
     /**
-     * @var string
-     * @Serializer\Type("string")
+     * @var DateTime
+     * @Serializer\Type("DateTime<'Y-m-d H:i:s'>")
      */
     public $dateCreated;
 

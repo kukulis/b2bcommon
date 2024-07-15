@@ -25,6 +25,7 @@ class Product
     /**
      * @var DateTime
      * @Serializer\Type("DateTime<'Y-m-d H:i:s'>")
+     * @Serializer\SerializedName("last_update")
      */
     public $lastUpdate;
 
@@ -49,12 +50,14 @@ class Product
     /**
      * @var string|null
      * @Serializer\Type("string")
+     * @Serializer\SerializedName("parent_sku")
      */
     public $parentSku;
 
     /**
      * @var string|null
      * @Serializer\Type("string")
+     * @Serializer\SerializedName("origin_country_code")
      */
     public $originCountryCode;
 
@@ -97,12 +100,14 @@ class Product
     /**
      * @var bool
      * @Serializer\Type("boolean")
+     * @Serializer\SerializedName("for_male")
      */
     public $forMale = false;
 
     /**
      * @var bool
      * @Serializer\Type("boolean")
+     * @Serializer\SerializedName("for_female")
      */
     public $forFemale = false;
 
@@ -115,12 +120,14 @@ class Product
     /**
      * @var string|null
      * @Serializer\Type("string")
+     * @Serializer\SerializedName("pack_size")
      */
     public $packSize;
 
     /**
      * @var int|null
      * @Serializer\Type("integer")
+     * @Serializer\SerializedName("pack_amount")
      */
     public $packAmount;
 
@@ -133,6 +140,7 @@ class Product
     /**
      * @var float
      * @Serializer\Type("float")
+     * @Serializer\SerializedName("weight_bruto")
      */
     public $weightBruto = 0.0;
 
@@ -158,18 +166,21 @@ class Product
     /**
      * @var string|null
      * @Serializer\Type("string")
+     * @Serializer\SerializedName("delivery_type")
      */
     public $deliveryTime;
 
     /**
      * @var string|null
      * @Serializer\Type("string")
+     * @Serializer\SerializedName("deposit_code")
      */
     public $depositCode;
 
     /**
      * @var string|null
      * @Serializer\Type("string")
+     * @Serializer\SerializedName("code_from_custom")
      */
     public $codeFromCustom;
 
@@ -182,12 +193,14 @@ class Product
     /**
      * @var string|null
      * @Serializer\Type("string")
+     * @Serializer\SerializedName("code_from_supplier")
      */
     public $codeFromSupplier;
 
     /**
      * @var string|null
      * @Serializer\Type("string")
+     * @Serializer\SerializedName("code_from_vendor")
      */
     public $codeFromVendor;
 
@@ -206,6 +219,7 @@ class Product
     /**
      * @var int
      * @Serializer\Type("integer")
+     * @Serializer\SerializedName("google_product_category_id")
      */
     public $googleProductCategoryId = 0;
 
@@ -242,6 +256,7 @@ class Product
     /**
      * @var string|null
      * @Serializer\Type("string")
+     * @Serializer\SerializedName("variant_name")
      */
     public $variantName;
 
@@ -254,6 +269,7 @@ class Product
     /**
      * @var string|null
      * @Serializer\Type("string")
+     * @Serializer\SerializedName("label_size")
      */
     public $labelSize;
 
@@ -270,6 +286,7 @@ class Product
     public $composition;
 
     /**
+     * not used in serialization
      */
     private $pricelistProduct;
 
