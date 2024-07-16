@@ -301,7 +301,7 @@ class Product
      * @var Package[]
      * @Serializer\Type("array<Catalog\B2b\Common\Data\Catalog\Package>")
      */
-    private $packages;
+    private $packages=[];
 
     /**
      * Return the tags as a comma-separated string
