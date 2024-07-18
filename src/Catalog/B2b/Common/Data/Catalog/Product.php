@@ -620,4 +620,8 @@ class Product
         return $this;
     }
 
+    public function isCorrectSku() : bool {
+        return preg_match('/^[\w\-]+$/', $this->sku);
+    }
+
 }
