@@ -624,4 +624,16 @@ class Product
         return preg_match('/^[\w\-]+$/', $this->sku);
     }
 
+    public function isEmptyCodeFromCustoms() : bool {
+        if ( $this->codeFromCustom == null ) {
+            return true;
+        }
+
+        if ( trim ($this->codeFromCustom ) == '') {
+            return true;
+        }
+
+        return false;
+    }
+
 }
