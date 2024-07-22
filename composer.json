@@ -6,7 +6,7 @@
     "b2bcommon"
   ],
 
-  "version": "2023.06.26",
+  "version": "2024.07.22",
 
   "require": {
     "psr/log": "~1.0"
