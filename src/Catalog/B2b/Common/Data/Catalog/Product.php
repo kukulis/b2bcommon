@@ -301,7 +301,7 @@ class Product
      * @var Package[]
      * @Serializer\Type("array<Catalog\B2b\Common\Data\Catalog\Package>")
      */
-    private $packages=[];
+    private $packages = [];
 
     /**
      * Return the tags as a comma-separated string
@@ -620,20 +620,27 @@ class Product
         return $this;
     }
 
-    public function isCorrectSku() : bool {
+    public function isCorrectSku(): bool
+    {
         return preg_match('/^[\w\-]+$/', $this->sku);
     }
 
-    public function isEmptyCodeFromCustoms() : bool {
-        if ( $this->codeFromCustom == null ) {
+    public function isEmptyCodeFromCustoms(): bool
+    {
+        if ($this->codeFromCustom == null) {
             return true;
         }
 
-        if ( trim ($this->codeFromCustom ) == '') {
+        if (trim($this->codeFromCustom) == '') {
             return true;
         }
 
         return false;
+    }
+
+    public function getVolume(): float
+    {
+        return $this->width * $this->height * $this->length;
     }
 
 }
