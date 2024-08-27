@@ -643,4 +643,15 @@ class Product
         return $this->width * $this->height * $this->length;
     }
 
+    /**
+     * @var string
+     * @Serializer\Type("string")
+     */
+    public $barcode;
+
+    public function setBarcode(string $barcode): Product
+    {
+        $this->barcode = $barcode;
+        return $this;
+    }
 }
