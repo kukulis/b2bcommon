@@ -644,12 +644,12 @@ class Product
     }
 
     /**
-     * @var string
+     * @var ?string
      * @Serializer\Type("string")
      */
     public $barcode;
 
-    public function setBarcode(string $barcode): Product
+    public function setBarcode(?string $barcode): Product
     {
         $this->barcode = $barcode;
         return $this;
